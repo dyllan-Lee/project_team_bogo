@@ -77,6 +77,13 @@ function getprenotice(id, callback) {
   })
 }
 
+// function getnxtnotice(id, callback) {
+//   connection.query(`SELECT id FROM notice WHERE id > ${id}  ORDER BY id LIMIT 1`, (err, row, fields) => {
+//     if (err) throw err;
+//     callback(row);
+//     // console.log(rows);
+//   })
+// }
 function getnxtnotice(id, callback) {
   connection.query(`SELECT id FROM notice WHERE id > ${id}  ORDER BY id LIMIT 1`, (err, row, fields) => {
     if (err) throw err;
@@ -86,7 +93,7 @@ function getnxtnotice(id, callback) {
 }
 //다음글이 존재하지 않을때 비교 구문
 function compareid(id, callback) {
-  connection.query(`select exists(select * from notice where id=${id})as t;`, (err, row, fields) => {
+  connection.query(`select ifnull((select id from notice where id=${id}),'0')as id;`, (err, row, fields) => {
     if (err) throw err;
     callback(row);
   })
@@ -183,7 +190,7 @@ module.exports = {
   getnxtnotice,
   updateNoticeWrite,
   deleteBynotice,
-  // compareid,
+  compareid,
 
   //청아 추가
   getcollection,

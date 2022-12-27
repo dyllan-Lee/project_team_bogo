@@ -148,17 +148,18 @@ router.get('/notice-detailMN', (req, res) => {
   let id = req.query.id;
   console.log(id);
   db.getnxtnotice(id, (row) => {
-    db.getnoticeById(row[0].id, (rows) => {
-      if (row[0].id == undefined) {
+    db.compareid(row[0].id, (row) => {
+      if (row[0].id == '0') {
         res.send(`<script>alert('다음글이 존재하지 않습니다.');document.location="/notice-main";</script>`)
       } else {
-        res.render('notice-detailM', {
-          row: rows[0]
+        db.getnoticeById(row[0].id, (rows) => {
+          res.render('notice-detailM', {
+            row: rows[0]
+          })
+          // console.log(row[0]);
         })
       }
-      // console.log(row[0]);
     })
-
     // console.log(row[0]);
   })
 })
