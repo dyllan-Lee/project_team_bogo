@@ -1,0 +1,26 @@
+1.현재페이지에서 아이디값을 받아오기
+  let id = req.query.id;
+  console.log(id);
+
+2. 받아온 아이디값을 쿼리문에 돌려서 현재 아이디값 보다 큰 아이디값중 가까운 아이디 1개를 받아옴
+
+function getnxtnotice(id, callback) {
+  connection.query(`SELECT id FROM notice WHERE id > ${id}  ORDER BY id LIMIT 1`, (err, row, fields) => {
+    if (err) throw err;
+    callback(row);
+    // console.log(rows);
+  })
+}
+
+
+
+3. 가까운 아이디값을 쿼리문 count 를 사용하여 id값이 존재하는지 확인
+ 
+connection.query(`select exists(select id from notice)as ischk`)
+
+4. 아이디값이 존재하면 던져줘서 출력 
+
+if 결과값이 1이면 출력
+5. 존재하지 않으면 console.log 출력
+
+없으면 
