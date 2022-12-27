@@ -13,7 +13,7 @@
 테이블 생성
 CREATE TABLE notice(  
     id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
-    DATE DATETIME COMMENT 'Create Time',
+    DATE DATE COMMENT 'Create Time',
     noticefile VARCHAR(255),
     noticetitle VARCHAR(255),
     noticecont TEXT(65535),
