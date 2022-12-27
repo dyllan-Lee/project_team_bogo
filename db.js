@@ -87,6 +87,7 @@ function getprenotice(id, callback) {
 function getnxtnotice(id, callback) {
   connection.query(`SELECT id FROM notice WHERE id > ${id}  ORDER BY id LIMIT 1`, (err, row, fields) => {
     if (err) throw err;
+    // console.log(err);
     callback(row);
     // console.log(rows);
   })
