@@ -64,9 +64,10 @@ img.m-main1 {
 }
 
 /* 메인2 */
-.main2-txt-wrap{
+.main2-txt-wrap {
   overflow-x: hidden;
 }
+
 .main2-txt {
   width: 100%;
   font-size: 10vw;
@@ -91,35 +92,42 @@ img.m-main1 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .main3_list_text {
   width: 70%;
   /* background-color: tomato; */
 }
-.main3_list_wrap{
+
+.main3_list_wrap {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
 }
-.main3_list_wrap h3{
+
+.main3_list_wrap h3 {
   font-size: 32px;
   font-weight: bold;
   margin-right: 30px;
 }
-.main3_list_wrap>ul{
+
+.main3_list_wrap>ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.main3_list_wrap>ul>li{
+
+.main3_list_wrap>ul>li {
   font-size: 16px;
   font-weight: normal;
   margin-right: 30px;
 }
-.main3_list_wrap>ul>li>b{
+
+.main3_list_wrap>ul>li>b {
   font-size: 18px;
   font-weight: bold;
 }
-.main3_list_wrap>ul>li:last-child{
+
+.main3_list_wrap>ul>li:last-child {
   margin-right: 0px;
 }
 
@@ -215,6 +223,7 @@ img.m-main1 {
 .main3_icon6 {
   background-image: url(../img/waytocome.png);
 }
+
 /* main3_icons */
 .main3_icon_txt a {
   font-size: 22px;
@@ -224,7 +233,7 @@ img.m-main1 {
 }
 
 /* 메인4 전시 */
-.main4_wrap h2{
+.main4_wrap h2 {
   margin: 40px 0;
 }
 
@@ -253,42 +262,58 @@ img.m-main1 {
   /* 1211 추가한것 */
   flex-direction: column;
 }
-.silde_arrow{
+
+.silde_arrow {
   position: absolute;
-  right: 0; top:60px;
+  right: 0;
+  top: 60px;
 }
-.silde_arrow>ul{
+
+.silde_arrow>ul {
   display: flex;
   justify-content: flex-end;
+
+  /* 1228 */
+  width: 100%;
 }
-.silde_arrow li{
+
+.silde_arrow li {
   font-size: 18px;
   font-weight: 700;
 }
-.exhibition_pagination{
-  width: 34px;
+
+.exhibition_pagination {
+  /* width: 34px; */
+  /* 1228 */
+  width: 100%;
+  /* 1228 */
   position: relative;
   bottom: 0;
   font-size: 0 !important;
 }
-.exhibition_pagination>span{
+
+.exhibition_pagination>span {
   font-size: 16px;
 }
-.swiper-pagination-total{
+
+.swiper-pagination-total {
   margin-left: 14px;
   position: relative;
 }
-.swiper-pagination-total::before{
+
+.swiper-pagination-total::before {
   content: '';
   display: block;
   position: absolute;
-  top:calc(50% - 2px);
+  top: calc(50% - 2px);
   left: -10px;
-  width: 4px; height: 4px;
+  width: 4px;
+  height: 4px;
   border-radius: 100%;
   background-color: #000;
 }
-.silde_arrow a{
+
+.silde_arrow a {
   display: block;
   width: 32px;
   height: 27px;
@@ -296,56 +321,70 @@ img.m-main1 {
   background-position: center center;
   background-size: 7px auto;
 }
-.slide_prev{
+
+.slide_prev {
   background-image: url(../img/left.png);
 }
-.slide_next{
+
+.slide_next {
   background-image: url(../img/right.png);
 }
+
 /* main4 img */
-.exhibition_img{
+.exhibition_img {
   display: block;
   width: 100%;
   height: auto;
 }
-.exhibition_img>a{
+
+.exhibition_img>a {
   display: block;
   padding-top: 138.7387%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-.exhibition_img1{
+
+.exhibition_img1 {
   background-image: url(../img/bar1.jpg);
 }
-.exhibition_img2{
+
+.exhibition_img2 {
   background-image: url(../img/bar2.jpg);
 }
-.exhibition_img3{
+
+.exhibition_img3 {
   background-image: url(../img/bar3.jpg);
 }
-.exhibition_img4{
+
+.exhibition_img4 {
   background-image: url(../img/bar4.jpg);
 }
-.exhibition_img5{
+
+.exhibition_img5 {
   background-image: url(../img/bar5.jpg);
 }
-.exhibition_img6{
+
+.exhibition_img6 {
   background-image: url(../img/bar6.jpg);
 }
-.exhibition_img7{
+
+.exhibition_img7 {
   background-image: url(../img/bar7.jpg);
 }
-.exhibition_img8{
+
+.exhibition_img8 {
   background-image: url(../img/bar8.jpg);
 }
+
 /* main4 txt */
-.exhibition_txt_wrap{
+.exhibition_txt_wrap {
   width: 100%;
   margin-top: 30px;
 }
+
 /* 전시버튼 */
-.exhibition_btn h4{
+.exhibition_btn h4 {
   display: inline-block;
   width: 90px;
   line-height: 30px;
@@ -353,20 +392,24 @@ img.m-main1 {
   font-size: 18px;
   text-align: center;
 }
-.now_exhibition{
+
+.now_exhibition {
   background-color: #073871;
   color: #fff;
 }
-.expected_exhibition{
+
+.expected_exhibition {
   margin: 0 10px;
 }
+
 /* 전시제목 */
-.exhibition_title{
+.exhibition_title {
   font-size: 18px;
   margin: 20px 0;
 }
+
 /* 전시날짜 */
-.exhibition_day{
+.exhibition_day {
   color: #777;
 }
 
@@ -476,7 +519,8 @@ img.m-main1 {
 .main6_wrap h2 {
   margin-bottom: 40px;
 }
-.main6_collection_wrap{
+
+.main6_collection_wrap {
   background-color: #eee;
 }
 
@@ -486,9 +530,11 @@ img.m-main1 {
   width: 100%;
   height: 100%;
 }
-.main6_collection>.swiper-wrapper{
+
+.main6_collection>.swiper-wrapper {
   align-items: center;
 }
+
 .main6_collection>.swiper-wrapper>.swiper-slide {
   display: flex;
   justify-content: space-between;
@@ -500,6 +546,7 @@ img.m-main1 {
   width: 100%;
   margin-right: 30px;
 }
+
 .main6_collection>.swiper-wrapper>.swiper-slide>a>img {
   width: 100%;
   height: auto;
@@ -527,11 +574,11 @@ img.m-main1 {
 
   /* 메인 4 */
   /* 전시제목 */
-  .exhibition_title p{
+  .exhibition_title p {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
   }
 }
 
@@ -548,13 +595,15 @@ img.m-main1 {
 
   /* 메인3 */
   /* 관람시간 관람요금 */
-  .main3_list_wrap h3{
+  .main3_list_wrap h3 {
     font-size: 28px;
   }
-  .main3_list_wrap>ul>li{
+
+  .main3_list_wrap>ul>li {
     font-size: 15px;
   }
-  .main3_list_wrap>ul>li>b{
+
+  .main3_list_wrap>ul>li>b {
     font-size: 16px;
   }
 
@@ -564,15 +613,17 @@ img.m-main1 {
 
   /* 메인 4 */
   /* 전시버튼 */
-  .exhibition_btn h4{
+  .exhibition_btn h4 {
     font-size: 16px;
   }
+
   /* 전시제목 */
-  .exhibition_title{
+  .exhibition_title {
     font-size: 16px;
   }
+
   /* 전시날짜 */
-  .exhibition_day{
+  .exhibition_day {
     font-size: 15px;
   }
 
@@ -596,33 +647,41 @@ img.m-main1 {
     font-size: 15px;
   }
 }
+
 /* 1211 메인4만 991따로 잡음 */
-@media (max-width:991px){
+@media (max-width:991px) {
+
   /* 전시버튼 */
-  .extension_exhibition{
+  .extension_exhibition {
     display: none !important;
   }
 }
+
 /* 1211 메인3만 800따로 잡음 */
-@media (max-width:800px){
+@media (max-width:800px) {
+
   /* 메인3 */
   /* 관람시간 관람요금 */
-  .main3_list_wrap{
+  .main3_list_wrap {
     margin-bottom: 20px;
     align-items: flex-start;
   }
-  .main3_list_wrap h3{
+
+  .main3_list_wrap h3 {
     font-size: 25px;
   }
-  .main3_list_wrap>ul{
+
+  .main3_list_wrap>ul {
     flex-direction: column;
     align-items: flex-start;
   }
-  .main3_list_wrap>ul>li{
+
+  .main3_list_wrap>ul>li {
     font-size: 14px;
     margin-right: 0;
     margin-bottom: 10px;
   }
+
   /* main3_icons */
   .main3_icons {
     margin: 20px 0;
@@ -642,7 +701,8 @@ img.m-main1 {
   .main3_icon_txt a {
     font-size: 18px;
   }
-} 
+}
+
 @media (max-width:768px) {
 
   /* 메인1 스와이퍼 */
@@ -671,20 +731,23 @@ img.m-main1 {
 
   /* 메인 4 */
   /* 메인4 전시 */
-  .main4_wrap h2{
+  .main4_wrap h2 {
     margin: 20px 0;
   }
+
   /* 전시제목 */
-  .exhibition_title{
+  .exhibition_title {
     margin: 10px 0;
   }
+
   /* 전시날짜 */
-  .exhibition_day{
+  .exhibition_day {
     font-size: 14px;
   }
+
   /* 메인4 스와이퍼 버튼 */
-  .silde_arrow{
-    top:30px;
+  .silde_arrow {
+    top: 30px;
   }
 
   /* 메인 5 알립니다 */
@@ -738,73 +801,88 @@ img.m-main1 {
 }
 
 @media (max-width:690px) {
+
   /* 메인2 */
   .main2-m-txt {
     margin: 10px 0;
   }
+
   /* 메인3 */
   /* 관람시간 관람요금 */
-  .main3_list_wrap{
+  .main3_list_wrap {
     margin-bottom: 10px;
   }
-  .main3_list_wrap h3{
+
+  .main3_list_wrap h3 {
     font-size: 18px;
     margin-right: 15px;
   }
-  .main3_list_wrap>ul>li{
+
+  .main3_list_wrap>ul>li {
     font-size: 12px;
     margin-right: 0;
     margin-bottom: 5px;
   }
-  .main3_list_wrap>ul>li>b{
+
+  .main3_list_wrap>ul>li>b {
     font-size: 14px;
   }
+
   /* 관람문의전화 모바일 배너 */
   .main3_mobile_icon img {
     margin-right: 5px;
     width: 15px;
     height: 15px;
   }
+
   /* main3_icons */
   .main3_icons {
     margin: 10px 0;
   }
+
   .main3_icon {
     width: 50px;
     height: 50px;
   }
+
   .main3_icon_txt a {
     font-size: 15px;
   }
+
   /* 메인 4 */
   /* 메인4 스와이퍼 버튼 */
-  .silde_arrow{
-    top:25px;
+  .silde_arrow {
+    top: 25px;
   }
+
   /* main4 img */
-  .exhibition_img>a{
+  .exhibition_img>a {
     width: 222px;
     height: 308px;
     margin: 0 auto;
     padding-top: 0;
   }
+
   /* main4 txt */
-  .exhibition_txt_wrap{
+  .exhibition_txt_wrap {
     text-align: center;
   }
+
   /* 전시버튼 */
-  .exhibition_btn h4{
+  .exhibition_btn h4 {
     font-size: 14px;
   }
+
   /* 전시제목 */
-  .exhibition_title{
+  .exhibition_title {
     font-size: 14px;
   }
+
   /* 전시날짜 */
-  .exhibition_day{
+  .exhibition_day {
     font-size: 12px;
   }
-  
+
   /* 메인 5 알립니다 */
   /* 탭 메뉴 */
   .notice_tablink {
@@ -830,17 +908,21 @@ img.m-main1 {
   }
 
 }
+
 @media (max-width:480px) {
+
   /* 관람시간 관람요금 */
-  .main3_list_wrap{
+  .main3_list_wrap {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
   }
-  .main3_list_wrap h3{
+
+  .main3_list_wrap h3 {
     margin-right: 0;
     margin-bottom: 10px;
   }
+
   .main3_mobile_icon img {
     display: none;
   }
