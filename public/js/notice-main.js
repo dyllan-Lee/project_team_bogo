@@ -28,6 +28,8 @@ function noticeTabOpen1(event, tabName) {
   event.currentTarget.className += ' notice_tab_active';
 }
 
+
+//파일 업로드 했을때 옆에 파일 이름 등장시키게 하는 쿼리
 $("#file-input").on('change', function () {
   var fileName = $("#file-input").val();
   $(".upload-name").val(fileName);
