@@ -1,7 +1,11 @@
 var swiper = new Swiper(".mySwiperd", {
   breakpoints: {
-    100: { slidesPerView: 1 },
-    440: { slidesPerView: 1 },
+    100: {
+      slidesPerView: 1
+    },
+    440: {
+      slidesPerView: 1
+    },
     550: {
       slidesPerView: 1.5,
     },
@@ -14,7 +18,7 @@ var swiper = new Swiper(".mySwiperd", {
   },
   slidesPerView: 4,
   loop: true,
-  centeredSlides: true,
+  // centeredSlides: true,
   spaceBetween: 100,
   freeMode: true,
   pagination: {
